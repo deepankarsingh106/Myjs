@@ -1,2 +1,2 @@
 # Myjs
-This is my own Javascript Learning
+This is my own JavaScript Learning
