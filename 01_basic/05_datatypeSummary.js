@@ -47,3 +47,38 @@ console.log(typeof(outsideTemp))
 console.log(typeof(hero))
 console.log(typeof(myFunction))
 console.log(typeof(myObj))
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// STACK MEMEORY(PRIMITIVE DATA TYPE )
+    let myYoutube = "Deeeps"
+    let anothername = myYoutube
+console.log(myYoutube)
+console.log(anothername)
+anothername = "hello"
+console.log(myYoutube)
+console.log(anothername)
+
+// here u observe that change in anothername does not lead to change in myYoutube name
+// as only the copy of the name is passed to anothername not the refrence part
+
+
+// HEAP MEMEORY(NON PRIMITIVE TYPE)
+let userone = {
+    email:"example@gmail.com",
+    upi: "oksbi@123"
+}
+
+let usertwo = userone
+// here u see you are not getting the copy nut the refrence of userone 
+// type and change made in usertwo also get reflected in the userone 
+// also
+console.log(userone.email)
+console.log(usertwo.email)
+
+usertwo.email = "deeps@gmail.com"
+// here changes in another got reflected in another also
+// as any changes you are doing indirectly reflected in the original value
+console.log(userone.email)
+console.log(usertwo.email)
+
+
