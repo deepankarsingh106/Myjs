@@ -8,11 +8,11 @@ const myArr = [0,1,2,3,4,5]
 
 const myArr2 = new Array(1,2,3,4,5,6,7)
 
-Arrays also support prototype 
+//Arrays also support prototype 
 console.log(myArr2.length)
 
 
-METHODS of Arrays
+//METHODS of Arrays
 myArr.push(6)
 console.log(myArr)
 
@@ -22,8 +22,8 @@ console.log(myArr)
 myArr.pop()
 console.log(myArr)
 
-it will basically push the element at the front of the array 
-alll the element will get pushed by one on right side
+// it will basically push the element at the front of the array 
+//alll the element will get pushed by one on right side
 myArr.unshift(9)
 console.log(myArr)
 // we remove the first element 
