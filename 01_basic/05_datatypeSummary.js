@@ -26,6 +26,8 @@ console.log(typeof(anotherid))
 // console.log(id === anotherid)
 // console.log(id == anotherid)
 
+
+// primitive type
 const bigNumber = 123467890456789n
 
 // ARRAY ,objects,function
