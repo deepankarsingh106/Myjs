@@ -224,7 +224,7 @@ console.log(instructor)
     {},
     {}
 ]
-
+// javasctipt object notation (JSON)
 
 // {
 //   "results": [
