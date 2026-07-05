@@ -1,3 +1,4 @@
+/*
 // singleton
 //Object.create // another way of making singelton objects
 
@@ -73,3 +74,108 @@ console.log(Jsuser.greeting2())
 // in the Most of the time we access the values of the objects using the dot operator 
 // and but there will certain instance where u have to extract the 
 // value using the Square Brackets[] like "Full Name" or Symbol objects
+
+*/
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+// now how can u create objects as singelton or create it with help of constructor
+
+const tinderUder = new Object()
+
+// Why not write const tinderUser.id = "123abc"?
+
+ //Because const is only used when declaring a variable, 
+ // not when adding a property to an object.
+
+ // What does const actually mean?
+
+ // const means you cannot reassign the 
+ // variable to point to a different object.
+
+ // This is allowed:
+tinderUder.id = "123abc"
+tinderUder.name = "Sammy"
+tinderUder.isLoggidIn = false
+//console.log(tinderUder)
+
+
+
+// this is how u declare user for any app
+const regularUser = {
+    email: "seome@gmail.com",
+    // one objects inside another objects
+    fullname:{
+        userfullname:{
+            firstname: "Deepankar",
+            lastname: "Singh"
+        }
+    }
+}
+
+
+console.log(regularUser.fullname.userfullname.firstname)
+
+// what if full name does not exist then 
+// we have to insert? -> fullname?. to just like ternary operator 
+// if things exist then this else this later discussed 
+
+
+
+// to combine the objects just like array
+const obj1 = {1:"a",2:"b"}
+const obj2 = {3:"c",d:"4"}
+const obj4 = {5:"e",f:"6"}
+
+// one way
+// const obj3 = {obj1,obj2}
+//console.log(obj3)
+
+// another way
+// now copy all the from obj2,obj4 -> obj1
+// now obj1 has now changed
+//const obj3 = Object.assign(obj1,obj2,obj4)
+
+
+ // another way
+const obj3 = {...obj1,...obj2}
+//console.log(obj3)
+// obj1 remain same
+// console.log(obj1)
+
+// this is how values come to database
+const user = [
+    {
+        id : 1,
+        email : "h@gmail.com"
+    },
+    {
+        id : 2,
+        email : "h1@gmail.com"
+    }
+]
+
+
+// inorder to print all these objects in long array
+// using for loop
+//console.log(user[1].id)
+
+// console.log(tinderUder)
+
+
+// here the result is in form of array 
+// and now u can use loops to access and change it
+console.log(Object.keys(tinderUder))
+console.log(Object.values(tinderUder))
+
+// har ek property ko array ki form represent kardia
+console.log(Object.entries(tinderUder))
+
+
+// sometimes when u loop and u dont find the value and 
+// then it is not find then it will crase also
+// so check it fast 
+console.log(tinderUder.hasOwnProperty('isLoggedIn'))
+
+// also see the method on inspect also
